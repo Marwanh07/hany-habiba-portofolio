@@ -15,7 +15,7 @@ const profile = {
     'https://www.linkedin.com/in/hanyhabiba?utm_source=share_via&utm_content=profile&utm_medium=member_android',
 }
 
-// Change this one value when the production domain is known or changes.
+// Set this to the confirmed production URL before publishing the QR code.
 const profileUrl = 'https://YOUR-DOMAIN.com/hany-habiba'
 
 function Icon({ name }) {
