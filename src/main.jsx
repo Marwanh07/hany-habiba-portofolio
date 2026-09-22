@@ -16,7 +16,7 @@ const profile = {
 }
 
 // Set this to the confirmed production URL before publishing the QR code.
-const profileUrl = 'https://YOUR-DOMAIN.com/hany-habiba'
+const profileUrl = 'https://marwanh07.github.io/hany-habiba-portofolio/hany-habiba'
 
 function Icon({ name }) {
   const paths = {
