@@ -1,6 +1,5 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { QRCodeSVG } from 'qrcode.react'
 import './styles.css'
 
 const profile = {
@@ -85,30 +84,6 @@ function ContactButton({ icon, label, value, href, external = false }) {
   )
 }
 
-function QRCodeCard() {
-  return (
-    <section className="qr-card" aria-labelledby="qr-heading">
-      <div className="qr-copy">
-        <p className="eyebrow">Share this profile</p>
-        <h2 id="qr-heading">Keep in touch</h2>
-        <p>Save this professional contact card for easy access anytime.</p>
-      </div>
-      <div className="qr-wrap">
-        <QRCodeSVG
-          value={profileUrl}
-          size={164}
-          level="H"
-          marginSize={3}
-          bgColor="#ffffff"
-          fgColor="#111820"
-          aria-label="QR code linking to Dr. Hany Ibrahim Ahmed Habiba's professional profile"
-        />
-        <span>Scan to view professional profile</span>
-      </div>
-    </section>
-  )
-}
-
 function App() {
   return (
     <main className="page-shell">
@@ -131,7 +106,6 @@ function App() {
           <ContactButton icon="fax" label="Telefax" value={profile.telefax} href={`tel:${profile.telefaxDial}`} />
           <ContactButton icon="linkedin" label="LinkedIn" value="LinkedIn Profile" href={profile.linkedin} external />
         </section>
-        <QRCodeCard />
         <footer>Professional profile · Dr. Hany Ibrahim Ahmed Habiba</footer>
       </div>
     </main>
