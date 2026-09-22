@@ -10,6 +10,8 @@ const profile = {
   whatsappInternational: '201066229275',
   telefax: '045-3368069',
   telefaxDial: '0453368069',
+  email: 'hanyagric@yahoo.com',
+  officialEmail: 'hanyagric@dum.edu.eg',
   linkedin:
     'https://www.linkedin.com/in/hanyhabiba?utm_source=share_via&utm_content=profile&utm_medium=member_android',
 }
@@ -32,6 +34,12 @@ function Icon({ name }) {
       <>
         <path d="M5 7.5V4.2h10v3.3M4 7.5h12a1 1 0 0 1 1 1v6.3H3V8.5a1 1 0 0 1 1-1Z" />
         <path d="M6 12.2h8M6 15v2h8v-2M7 4.2V2.8h6v1.4" />
+      </>
+    ),
+    mail: (
+      <>
+        <rect x="3" y="5" width="14" height="10" rx="1.5" />
+        <path d="m4 6 6 5 6-5" />
       </>
     ),
     linkedin: (
@@ -104,6 +112,13 @@ function App() {
             external
           />
           <ContactButton icon="fax" label="Telefax" value={profile.telefax} href={`tel:${profile.telefaxDial}`} />
+          <ContactButton icon="mail" label="Email" value={profile.email} href={`mailto:${profile.email}`} />
+          <ContactButton
+            icon="mail"
+            label="Official Email"
+            value={profile.officialEmail}
+            href={`mailto:${profile.officialEmail}`}
+          />
           <ContactButton icon="linkedin" label="LinkedIn" value="LinkedIn Profile" href={profile.linkedin} external />
         </section>
         <footer>Professional profile · Dr. Hany Ibrahim Ahmed Habiba</footer>
